@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prefix-tree-rl"
+version = "0.1.0"
+description = "Önek ağacı avantajı: critic'siz, token başına RL kredisi"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+torch = ["torch>=2.0"]
+dev = ["pytest>=7", "torch>=2.0"]
+
+[tool.setuptools]
+packages = ["prefix_tree_rl"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
